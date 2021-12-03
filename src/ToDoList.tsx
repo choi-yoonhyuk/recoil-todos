@@ -63,6 +63,7 @@ function ToDoList() {
         { shouldFocus: true }
       );
     }
+    // setError("extraError", {message: "Server offline"})
   };
   return (
     <div>
@@ -85,7 +86,8 @@ function ToDoList() {
               value: 4,
               message: "too short",
             },
-            validate: (value) => value.includes("nico") ? "'nico'를 포함 할 수 없습니다." : true ,
+            validate: (value) =>
+              value.includes("nico") ? "'nico'를 포함 할 수 없습니다." : true,
           })}
           placeholder="UserName"
         />
